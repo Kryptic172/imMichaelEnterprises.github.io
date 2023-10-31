@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/project1.css">
+
+      <title>Responsive portfolio website- Michael Enterprises</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav__logo">
+               <span class="nav__logo-circle">M</span>
+               <span class="nav__logo-name">Michael Enterprises.</span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+               <span class="nav__title">Menu</span>
+
+               <h3 class="nav__name">Michael</h3>
+
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="index.html" class="nav__link active-link">Home</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="index.html" class="nav__link">About</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="index.html" class="nav__link">Projects</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="index.html" class="nav__link nav__link-button">Contact me</a>
+                  </li>                
+               </ul>
+
+               <!--Close button-->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+            </div>
+
+            <div class="nav__buttons">
+               <!--Theme button-->
+               <i class="ri-moon-line  change-theme" id="theme-button"></i>
+
+               <!--Toggle button-->
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-4-line"></i>
+               </div>
+            </div>
+         </nav>
+      </header>
+
+
+         <!--==================== PROJECTS ====================-->
+         <section class="projects section" id="projects">
+            <h2 class="section__title-1">
+               <span>Projects</span>
+            </h2>
+
+            <div class="projects__container container grid">
+               <article class="projects__card">
+                  <div class="projects__image">
+                     <video src="assets/img/VID-20230506-WA0025.mp4" autoplay muted class="projects__video" controls></video>
+
+                     </a>
+                  </div>
+
+                  <div class="projects__contents">
+                     <h3 class="projects__subtitle">Program</h3>
+                     <h2 class="projects__title">Intelligent traffic management system</h2>
+
+                     <p class="projects__description">
+                        This system takes an image from the CCTV cameras at traffic junctions as input for real-time traffic density calculation using image processing and object detection. This system can be 
+                        broken down into 3 modules: Vehicle Detection module, Signal Switching Algorithm, and 
+                        Simulation module. This image is passed on to the vehicle detection 
+                        algorithm, which uses YOLO. The number of vehicles of each class, such as car, bike, bus, and 
+                        truck, is detected, which is to calculate the density of traffic. The signal switching algorithm uses 
+                        this density, among some other factors, to set the green signal timer for each lane. The red signal 
+                        times are updated accordingly. The green signal time is restricted to a maximum and minimum 
+                        value in order to avoid starvation of a particular lane. A simulation is also developed to 
+                        demonstrate the system’s effectiveness and compare it with the existing static system as shown above.
+                     </p>
+                  </div>
+
+               </article>
+            </div>
+         </section>
+
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <ul class="footer__links">
+               <li>
+                  <a href="#about" class="footer__link">About</a>
+               </li>
+
+               <li>
+                  <a href="#services" class="footer__link">Services</a>
+               </li>
+
+               <li>
+                  <a href="#projects" class="footer__link">Projects</a>
+               </li>
+            </ul>
+
+            <span class="footer__copy">
+               &#169; All Rights Reserved By 
+               <a href="#">Michael Esin</a>
+            </span>
+         </div>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-s-line"></i>
+      </a>
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src=""></script>
+      
+      <!--=============== EMAIL JS ===============-->
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
